@@ -45,6 +45,11 @@ Lilás: #5f2c82
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px #00000073;
+
+    /* Configurações de animação */
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+
  }
  /* Configurações da imagem da section login */
  section#login > div#imagem{
