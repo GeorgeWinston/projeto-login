@@ -38,15 +38,15 @@ Lilás: #5f2c82
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: #fff;
-    width: 250px;
+    width: 270px;
     height: 520px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px #00000073;
-
+    
     /* Configurações de animação */
+    transform: translate(-50%, -50%);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
 
@@ -75,9 +75,10 @@ Lilás: #5f2c82
  form > div.campo {
    display: block;
    background-color: #5f2c82;
+   border: 1.5px solid #49a09d;
    width: 100%;
    height: 40px;
-   border-radius: 5px;
+   border-radius: 8px;
    margin: 5px 0px;
  }
  div.campo > label {
@@ -85,9 +86,27 @@ Lilás: #5f2c82
  }
  /* Configurações dos ícones do campo dos formulários _ eu coloquei*/
  div.campo > span {
-   color: #49a09d;
+   color: #71dad6;
+   font-size: 2em;
+   width: 40px;
+   padding: 5px;
  }
-
+ div.campo > span:hover {
+   color: #fff;
+ }
+ /* Configurações dos input e-mail e senha */
+div.campo > input {
+   background-color: #71dad6;
+   font-size: 1em;
+   height: 100%;
+   border-radius: 8px;
+   width: calc(100% - 45px);
+   padding: 6px;
+   transform: translateY(-13px);  /*Sempre que tiver uma transformação/ animação para fzaer, colocar na última linha do código*/
+}
+div.campo >input:focus-within {
+   background-color: #fff;
+}
  /* Configurações do botão enviar*/
  form > input[type=submit] {
    display: block;
